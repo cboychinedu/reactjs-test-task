@@ -1,6 +1,7 @@
 // Importing the necessary modules 
 import React, { Component } from "react"; 
 import "../css/Dashboard.css"; 
+import data from "./data";
 import SalesImage from "../Images/sales.png"; 
 
 // Creating the search component 

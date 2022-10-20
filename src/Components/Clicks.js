@@ -3,11 +3,13 @@ import React, { Component } from "react";
 import "../css/Dashboard.css"; 
 import ClicksImage from "../Images/clicks.png"; 
 import arrowImage from "../Images/arrow.png"; 
+import data from "./data"; 
 
 // Creating the search component 
 class Clicks extends Component {
     // Render 
     render() {
+        console.log(data["data"]);
         return (
             <React.Fragment> 
                 <div className="clicks-div"> 
@@ -19,8 +21,8 @@ class Clicks extends Component {
 
                     <div className="clicks-para-div"> 
                         <p className="para red"> Clicks <span className="percent-red"> -13% </span></p> <br /> 
-                        <p className="para"> 243 <span className="yesterday"> Yesterday </span> </p> <br /> 
-                        <p className="last-friday"> 280 <span className="last-friday"> Last friday </span></p>
+                        <p className="para"> {data["data"][0]["clicks_current_yesterday"]} <span className="yesterday"> Yesterday </span> </p> <br /> 
+                        <p className="last-friday"> {data["data"][0]["clicks_current_last_3days"]} <span className="last-friday"> Last 3 days </span></p>
                     
                     </div>
 

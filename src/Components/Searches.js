@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "../css/Dashboard.css"; 
 import searchesImage from "../Images/searches.png"; 
 import arrowImage from "../Images/arrow.png"; 
+import data from "./data"; 
 
 // Creating the search component 
 class Searches extends Component {
@@ -19,8 +20,8 @@ class Searches extends Component {
 
                     <div className="searches-para-div"> 
                         <p className="para"> Searches <span className="percent-green"> +5% </span></p> <br /> 
-                        <p className="para"> 29 380 <span className="yesterday"> Yesterday </span> </p> <br /> 
-                        <p className="last-friday"> 27 985 <span className="last-friday"> Last friday </span></p>
+                        <p className="para"> {data["data"][0]["searches_current_yesterday"]} <span className="yesterday"> Yesterday </span> </p> <br /> 
+                        <p className="last-friday"> {data["data"][0]["searches_previous_last_3days"]} <span className="last-friday"> Last 3 days </span></p>
                     
                     </div>
 

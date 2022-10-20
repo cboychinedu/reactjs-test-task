@@ -3,12 +3,13 @@ import React, { Component } from "react";
 import Searches from "./Searches";
 import Clicks from "./Clicks";
 import "../css/Dashboard.css"; 
+import data from "./data";
 import Sales from "./Sales";
 
 // Creating the dashboard page 
 class Dashboard extends Component {
     // Render 
-    render() {
+    render() { 
         return(
             <React.Fragment> 
             
